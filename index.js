@@ -33,7 +33,9 @@ client.on('message', message => {
     if (command === 'discord') {
         client.commands.get('discord').execute(message, args, Discord, client);
     } 
-  
+    if (command === 'tjibbeishot') {
+        client.commands.get('tjibbeishot').execute(message, args, Discord, client);
+    } 
 });
  
 client.login(process.env.token);
